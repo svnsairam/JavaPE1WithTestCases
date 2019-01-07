@@ -2,14 +2,14 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Q2_PrintTomOrJerry {
+public class PrintTomOrJerry {
     public static void main(String ar[]) {
         System.out.println("Enter digit between 20 to 30");
         Scanner     scanner = new Scanner(System.in);
         int    input = scanner.nextInt();
 
-        Q2_PrintTomOrJerry q2Object = new Q2_PrintTomOrJerry();
-        q2Object.evaluate(input);
+        PrintTomOrJerry printTomOrJerry = new PrintTomOrJerry();
+        printTomOrJerry.evaluate(input);
     }
 
     public String evaluate(int value){

@@ -2,15 +2,15 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Q10_RepeatingLastNLetters {
+public class RepeatingLastNLetters {
     public static  void  main(String arg[]){
         Scanner     scanner = new Scanner(System.in);
         String      inputString = new String();
         inputString = scanner.nextLine();
         int     inputInt = scanner.nextInt();
 
-        Q10_RepeatingLastNLetters myObject = new Q10_RepeatingLastNLetters();
-        myObject.repeatLastNLetters(inputString, inputInt);
+        RepeatingLastNLetters repeatingLastNLetters = new RepeatingLastNLetters();
+        repeatingLastNLetters.repeatLastNLetters(inputString, inputInt);
 
     }
 

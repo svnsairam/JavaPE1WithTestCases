@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Q1_Pallidrome {
+public class Pallidrome {
     final static int   MAX = 25;
     public static void main(String ar[]){
         Scanner     sc = new Scanner(System.in);

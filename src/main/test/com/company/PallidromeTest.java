@@ -7,24 +7,24 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q1_PallidromeTest {
+public class PallidromeTest {
 
-    Q1_Pallidrome testObj;
+    Pallidrome pallidrome;
 
     @Before
     public void setUp(){
-        testObj = new Q1_Pallidrome();
+        pallidrome = new Pallidrome();
     }
 
     @After
     public  void tearDown(){
-        testObj = null;
+        pallidrome = null;
     }
 
     @Test
     public void checkPallindromeSuccess(){
         boolean expectedValue = true;
-        boolean actualValue = testObj.checkPallindrome(12321, 10000);
+        boolean actualValue = pallidrome.checkPallindrome(12321, 10000);
 
         assertEquals(expectedValue, actualValue);
     }
@@ -33,7 +33,7 @@ public class Q1_PallidromeTest {
     @Test
     public  void checkPallindromeFailure(){
         boolean expectedValue = false;
-        boolean actualValue = testObj.checkPallindrome(12345, 10000);
+        boolean actualValue = pallidrome.checkPallindrome(12345, 10000);
 
         assertEquals(expectedValue, actualValue);
     }

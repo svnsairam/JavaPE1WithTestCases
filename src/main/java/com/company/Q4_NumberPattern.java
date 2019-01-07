@@ -2,13 +2,13 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Q4_NumberPattern {
+public class NumberPattern {
     public static void main(String arg[]){
         Scanner     scanner = new Scanner(System.in);
         int     input = scanner.nextInt();
 
-        Q4_NumberPattern myObj = new Q4_NumberPattern();
-        myObj.printSeries(input);
+        NumberPattern numberPattern = new NumberPattern();
+        numberPattern.printSeries(input);
     }
 
     public  String printSeries(int input){

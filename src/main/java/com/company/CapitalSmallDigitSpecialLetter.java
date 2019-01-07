@@ -3,7 +3,7 @@ package com.company;
 import java.awt.desktop.SystemEventListener;
 import java.util.Scanner;
 
-public class Q6_CapitalSmallDigitSpecialLetter {
+public class CapitalSmallDigitSpecialLetter {
     public static void main(String arg[]){
         Scanner scanner = new Scanner(System.in);
         char      charInput;

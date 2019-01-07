@@ -6,32 +6,32 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q3_VowelOrConsonantTest {
+public class VowelOrConsonantTest {
 
-    Q3_VowelOrConsonant testObj;
+    VowelOrConsonant vowelOrConsonant;
 
     @Before
     public void setUp(){
-        testObj = new Q3_VowelOrConsonant();
+        vowelOrConsonant = new VowelOrConsonant();
     }
 
     @After
     public  void tareDown(){
-        testObj = null;
+        vowelOrConsonant = null;
     }
 
 
     @Test
     public  void testStringToVowelAndConsonantConversion(){
         String expectedValue = "Vowel Consonant Vowel Consonant ";
-        String actualValue = testObj.convertStringToVowelAndConsonant("uday");
+        String actualValue = vowelOrConsonant.convertStringToVowelAndConsonant("uday");
         assertEquals(expectedValue, actualValue);
 
     }
     @Test
     public  void testInvalidInputConversion(){
         String expectedValue = "Error Not a proper word";
-        String actualValue = testObj.convertStringToVowelAndConsonant("123");
+        String actualValue = vowelOrConsonant.convertStringToVowelAndConsonant("123");
         assertEquals(expectedValue, actualValue);
 
     }

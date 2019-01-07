@@ -6,25 +6,25 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q10_RepeatingLastNLettersTest {
+public class RepeatingLastNLettersTest {
 
 
-    Q10_RepeatingLastNLetters testObj;
+    RepeatingLastNLetters repeatingLastNLetters;
 
     @Before
     public void setUp(){
-        testObj = new Q10_RepeatingLastNLetters();
+        repeatingLastNLetters = new RepeatingLastNLetters();
     }
 
     @After
     public  void tearDown(){
-        testObj = null;
+        repeatingLastNLetters = null;
     }
         @Test
         public  void repeatingNLetters(){
             String expectedValue = "Stackrouterouterouterouterouteroute";
 
-            String actualValue = testObj.repeatLastNLetters("Stackroute", 5);
+            String actualValue = repeatingLastNLetters.repeatLastNLetters("Stackroute", 5);
 
             assertEquals(expectedValue, actualValue);
         }

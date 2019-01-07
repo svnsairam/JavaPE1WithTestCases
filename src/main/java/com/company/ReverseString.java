@@ -2,14 +2,14 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Q9_ReverseString {
+public class ReverseString {
     public static void main(String arg[]){
         Scanner scanner = new Scanner(System.in);
         String      inputString = new String();
         inputString = scanner.nextLine();
 
-        Q9_ReverseString myObj = new Q9_ReverseString();
-        myObj.reverse(inputString);
+        ReverseString reverseString = new ReverseString();
+        reverseString.reverse(inputString);
     }
 
 

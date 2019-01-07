@@ -6,26 +6,25 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q4_NumberPatternTest {
+public class ReverseStringTest {
 
-    Q4_NumberPattern testObj;
+    ReverseString reverseString;
 
     @Before
     public void setUp(){
-        testObj = new Q4_NumberPattern();
+        reverseString = new ReverseString();
     }
 
     @After
     public  void tearDown(){
-        testObj = null;
+        reverseString = null;
     }
 
     @Test
-    public void testNumberPattern(){
-        String  expectedValue = "1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 ";
-        String  actualValue = testObj.printSeries(5);
+    public  void testStringReverse(){
+        String expectedValue = "nodnol";
+        String actualValue = reverseString.reverse("london");
 
         assertEquals(expectedValue,actualValue);
     }
-
 }

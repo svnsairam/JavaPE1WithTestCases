@@ -6,24 +6,24 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q7_SortNumberInDecreasingOrderTest {
+public class SortNumberInDecreasingOrderTest {
 
-    Q7_SortNumberInDecreasingOrder testObj;
+    SortNumberInDecreasingOrder sortNumberInDecreaseingOrder;
 
     @Before
     public void setUp(){
-        testObj = new Q7_SortNumberInDecreasingOrder();
+        sortNumberInDecreaseingOrder = new SortNumberInDecreasingOrder();
     }
 
     @After
     public  void tearDown(){
-        testObj = null;
+        sortNumberInDecreaseingOrder = null;
     }
 
     @Test
     public void testDecreasingOrderOfNumber(){
         String expectedValue = "544332";
-        String actualValue = testObj.sortNumberInDecreaseingOrder(234534);
+        String actualValue = sortNumberInDecreaseingOrder.sortNumberInDecreaseingOrder(234534);
 
         assertEquals(expectedValue,actualValue);
     }
@@ -31,12 +31,12 @@ public class Q7_SortNumberInDecreasingOrderTest {
     @Test
     public void testAdditionOfEvenNumbersGreaterThan15(){
         boolean expectedValue = false;
-        boolean actualValue = testObj.addTheEvenDigits(234534);
+        boolean actualValue = sortNumberInDecreaseingOrder.addTheEvenDigits(234534);
 
         assertEquals(expectedValue,actualValue);
 
         expectedValue = true;
-        actualValue = testObj.addTheEvenDigits(445566);
+        actualValue = sortNumberInDecreaseingOrder.addTheEvenDigits(445566);
         assertEquals(expectedValue,actualValue);
 
     }

@@ -6,13 +6,13 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q2_PrintTomOrJerryTest {
+public class PrintTomOrJerryTest {
 
 
-    Q2_PrintTomOrJerry tomJerryObject;
+    PrintTomOrJerry tomJerryObject;
     @Before
     public void setUp(){
-        tomJerryObject = new Q2_PrintTomOrJerry();
+        tomJerryObject = new PrintTomOrJerry();
     }
 
     @Test

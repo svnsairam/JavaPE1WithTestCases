@@ -6,39 +6,39 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class Q6_CapitalSmallDigitSpecialLetterTest {
+public class CapitalSmallDigitSpecialLetterTest {
 
-    Q6_CapitalSmallDigitSpecialLetter testObj;
+    CapitalSmallDigitSpecialLetter capitalSmallDigitSpecialLetter;
 
     @Before
     public void setUp(){
-        testObj = new Q6_CapitalSmallDigitSpecialLetter();
+        capitalSmallDigitSpecialLetter = new CapitalSmallDigitSpecialLetter();
     }
 
     @After
     public  void tearDown(){
-        testObj = null;
+        capitalSmallDigitSpecialLetter = null;
     }
 
     @Test
     public void testTypeOfCharecter(){
         String expectedValue = "Capital Letter";
-        String actualValue = testObj.checkCapitalSmallDigitSpecialLetter('A');
+        String actualValue = capitalSmallDigitSpecialLetter.checkCapitalSmallDigitSpecialLetter('A');
 
         assertEquals(expectedValue,actualValue);
 
          expectedValue = "Small Letter";
-         actualValue = testObj.checkCapitalSmallDigitSpecialLetter('s');
+         actualValue = capitalSmallDigitSpecialLetter.checkCapitalSmallDigitSpecialLetter('s');
 
         assertEquals(expectedValue,actualValue);
 
          expectedValue = "Number";
-         actualValue = testObj.checkCapitalSmallDigitSpecialLetter('2');
+         actualValue = capitalSmallDigitSpecialLetter.checkCapitalSmallDigitSpecialLetter('2');
 
         assertEquals(expectedValue,actualValue);
 
          expectedValue = "Special Charecter";
-         actualValue = testObj.checkCapitalSmallDigitSpecialLetter('$');
+         actualValue = capitalSmallDigitSpecialLetter.checkCapitalSmallDigitSpecialLetter('$');
 
         assertEquals(expectedValue,actualValue);
 

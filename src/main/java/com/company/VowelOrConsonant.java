@@ -3,13 +3,13 @@ package com.company;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Q3_VowelOrConsonant {
+public class VowelOrConsonant {
     public static void main(String ar[]){
         Scanner     scanner = new Scanner(System.in);
         String      input = scanner.nextLine();
 
-        Q3_VowelOrConsonant myObj = new Q3_VowelOrConsonant();
-        myObj.convertStringToVowelAndConsonant(input);
+        VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
+        vowelOrConsonant.convertStringToVowelAndConsonant(input);
 
     }
 
